@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI", "Src\SimpleAPI\SimpleAPI.csproj", "{99FDA8F8-2BC8-4C57-BE4F-D4E58CEE5936}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI.Test", "Test\SampleAPI.Test\SampleAPI.Test.csproj", "{778587E4-6018-4F34-B9F3-83458EED2E6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI.Test", "Test\SampleAPI.Test\SampleAPI.Test.csproj", "{778587E4-6018-4F34-B9F3-83458EED2E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A1437B3-2B4E-435B-9E97-BEFB82B7B375}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

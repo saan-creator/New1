@@ -10,7 +10,12 @@ namespace SimpleAPI.Controllers
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
-    {
+    { 
+        /// <summary>Add two number
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public int Add(int a, int b)
         {
 
