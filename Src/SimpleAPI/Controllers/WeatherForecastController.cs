@@ -15,7 +15,7 @@ namespace SimpleAPI.Controllers
         {
 
             return a + b;
-        }
+        } 
 
         private static readonly string[] Summaries = new[]
         {
