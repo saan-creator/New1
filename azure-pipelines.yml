@@ -42,3 +42,4 @@ steps:
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
+    publishRunAttachments : 'Opt in'
