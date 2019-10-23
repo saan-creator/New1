@@ -28,18 +28,29 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+
+- task: CopyFiles@2
+  inputs:
+    contents: '_buildOutput/**'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
+
+    
 #- task: VSTest@2
 #  inputs:
 #    platform: '$(buildPlatform)'
 #    configuration: '$(buildConfiguration)'
 
 
-- task: VSTest@2
-  inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*SampleAPI.Test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-    publishRunAttachments : 'Opt in'
+#- task: VSTest@2
+  #inputs:
+   # testSelector: 'testAssemblies'
+   # testAssemblyVer2: |
+    #  **\*SampleAPI.Test*.dll
+    #  !**\*TestAdapter.dll
+   #   !**\obj\**
+   # searchFolder: '$(System.DefaultWorkingDirectory)'
+   # publishRunAttachments : 'Opt in'
