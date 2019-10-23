@@ -7,6 +7,7 @@ namespace SimpleAPI
     /*Comment here*/
     /*Comment here*/
     /*Comment here*/
+    /*Comment here*/
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
